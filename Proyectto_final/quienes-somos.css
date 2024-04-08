@@ -1,0 +1,35 @@
+/* Estilos para el contenido principal */
+.main {
+    padding: 50px 0;
+}
+
+.main h2 {
+    margin-bottom: 20px;
+}
+
+.main p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Estilos generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

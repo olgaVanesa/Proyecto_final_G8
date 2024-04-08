@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo</title>
+    <title>Iniciar sesión</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header class="header">
@@ -20,49 +20,38 @@
                         <a href="#" class="btn btn-sm btn-outline-info">Twitter</a>
                         <a href="#" class="btn btn-sm btn-outline-danger">Instagram</a>
                     </div>
-                    <form action="/buscar" method="GET" class="form-inline d-inline-block ml-3">
-                        <input type="text" class="form-control mr-sm-2" placeholder="Buscar..." name="q">
-                        <button type="submit" class="btn btn-primary">Buscar</button>
-                    </form>
-                    <a href="login.html" class="btn btn-outline-secondary ml-3">Iniciar sesión</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="catalogo.html">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="quienes-somos.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contacto</a>
-                    </li>
-                </ul>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Iniciar sesión</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <a href="sign_in.html">¿No tienes una cuenta? Regístrate aquí.</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <main class="main">
-        <div class="container">
-            <div class="row">
-                <!-- Acá van los productos del catálogo -->
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
