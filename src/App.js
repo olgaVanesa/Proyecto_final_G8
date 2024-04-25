@@ -1,23 +1,20 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import NavegationBar from './components/NavegationBar';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
-import Catalogue from './components/Catalogue';
-import Contact from './components/Contact';
-import FAQ from './components/FAQ';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
+import Login from './components/Login/Login';
+import SignUp from './components/Signup/SignUp';
+import Catalogue from './components/Catalogue/Catalogue';
+import Contact from './components/Contact/Contact';
+import FAQ from './components/FAQ/FAQ';
 
 function App() {
   return (
-    <div>
-        <Header />
-        <NavegationBar />
+    <div className='app-container'>
+        <Navbar />
         <Routes>
-          <Route path="/" exact element={<Main />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/catalogue" element={<Catalogue />} />
